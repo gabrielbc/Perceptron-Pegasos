@@ -35,10 +35,10 @@ print "Calling pegasos train"
 
 # Test with array of lambdas or hardcoded one
 
-# l = range(-9,9)
-# ws = [pegasos.train(feature_vectors, desired_outputs, 2**x) for x in l]
+l = range(-9,9)
+ws = [pegasos.train(feature_vectors, desired_outputs, 2**x) for x in l]
 
-ws = [pegasos.train(feature_vectors, desired_outputs, 2 ** -7)]
+#ws = [pegasos.train(feature_vectors, desired_outputs, 2 ** -7)]
 
 print "Reading validation file..."
 lines = read_instances("spam_val.txt")
